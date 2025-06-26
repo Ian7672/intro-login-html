@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../view/dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="nave">
+        <ul>
+          <button id="toggle-nav">
+            <img id="tog" src="../assets/menu2.png" />
+          </button>
+          <div id="nav">
+            <li>
+              <input class="das" type="radio" id="home" name="nav" />
+              <label for="home">Home</label>
+            </li>
+            <li>
+              <input class="das" type="radio" id="biodata" name="nav" />
+              <label for="biodata">Biodata</label>
+            </li>
+            <li>
+              <input class="das" type="radio" id="galery" name="nav" />
+              <label for="galery">Galery</label>
+            </li>
+            <li>
+              <a class="das" href="../login.html" id="logout">Logout</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <iframe id="iframe"></iframe>
+    </main>
+    <script src="../script/dashboard.js"></script>
+  </body>
+</html>

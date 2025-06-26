@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Background dengan efek blur */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img_tech_1.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); /* Atur nilai blur sesuai kebutuhan (5px-10px) */
+  z-index: -1;
+}
+
+/* Overlay untuk meningkatkan keterbacaan teks */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Warna overlay dan opacity */
+  z-index: -1;
+}
+
+.login-container {
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.45);
+  background-color: rgba(0, 0, 0, 0.518);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+#for {
+  padding: 20px;
+}
+
+label {
+  color: white;
+}
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#login-bt {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(0, 121, 173);
+  color: #ffffff;
+  padding: 10px;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.404);
+}
+
+#login-bt:hover,
+#d-bt:hover {
+  color: white;
+  background-color: #000000;
+}
+
+#d-bt {
+  width: 100%;
+  height: 40px;
+  background-color: #008e37;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+  cursor: pointer;
+
+  margin-right: 10px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.404);
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#in-fr {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+
+  transition: color 0.2s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.32);
+  width: 100%;
+  height: 50px;
+
+  color: #ffffff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  font-size: medium;
+  cursor: auto;
+}
