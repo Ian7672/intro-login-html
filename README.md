@@ -55,10 +55,9 @@ Proyek ini adalah sebuah dashboard portfolio interaktif yang mencakup sistem log
 ```
 intro-login-html/
 ├── assets/              # File gambar dan aset
+├── bio/
 ├── dashboard/
-│   ├── dashboard.html   # Halaman dashboard utama
-│   ├── dashboard.css
-│   └── dashboard.js
+├── script/
 ├── view/
 │   ├── home.html        # Halaman beranda
 │   ├── home.css
@@ -93,4 +92,4 @@ Dikembangkan oleh **Ian7672** - [GitHub Profile](https://github.com/Ian7672)
 
 ---
 
-© 2025 kasir-laravel-v1. All rights reserved.
+© 2025 intro-login-html. All rights reserved.
